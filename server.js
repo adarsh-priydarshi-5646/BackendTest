@@ -13,6 +13,7 @@ app.use('/api/auth/users', require('./routes/users/user.route.js'))
 app.use('/api/posts', require('../src/routes/posts/post.route.js'))
 
 
-app.listen(3007, () => {
-    console.log('Server chal raha hai port 3007 par')
+const PORT = process.env.PORT || 3008
+app.listen(PORT, () => {
+    console.log(`Server chal raha hai port ${PORT} par`)
 })
