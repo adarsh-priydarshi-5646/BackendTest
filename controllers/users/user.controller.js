@@ -1,9 +1,6 @@
 const prisma = require('../../config/db.config.js')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const { all } = require('../../routes/users/user.route.js')
-
-
 
 
 const allUsers = async (req, res) => {
